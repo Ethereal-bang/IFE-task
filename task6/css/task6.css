@@ -1,0 +1,422 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: #5d5d5d;
+}
+#container{
+	width: 892px;
+	height: 1366px;
+	background-color: white;
+	margin: 0 auto;
+	padding: 0 44px;
+}
+
+header{
+	width: 892px;
+	height: 61px;
+	font-family: "黑体";	
+	font-size: 12px;
+	border-bottom: 2px solid #938e80;
+}
+
+header>div{
+	display: inline-block;
+	height: 61px;
+	width: 110px;
+	background-color: #d45c5c;
+	color: #fff;
+}
+
+header>div>span{
+	float: left;
+	margin-top: 43px;
+	margin-left: 5px;
+}
+
+header>span{
+	float: right;
+	color: #d45d5c;
+	margin-top: 43px;
+}
+
+.middle{
+	font-family: "微软雅黑";
+	margin-top: 30px;
+}
+
+.middle::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.middle .middleLeft{
+	position: absolute;
+}
+
+.middle .middleLeft div{
+	width: 641px;
+	height: 301px;
+}
+
+.middle .middleLeft div::before{
+	content: "";
+	position: absolute;
+	width: 191px;
+	height: 301px;
+	background-color: rgba(0,255,0,0.2);
+	z-index: 50;
+}
+
+.middle .middleLeft div::after{
+	position: absolute;
+	right: 0;
+	top: 0;
+	content: "";
+	width: 191px;
+	height: 301px;
+	background-color: rgba(255,0,0,0.2);
+	z-index: 50;
+}
+.middle .middleRight{
+	position: relative;
+	width: 203px;
+	height: 301px;
+	border-top: 2px solid #cc8090;
+	float: right;
+}
+
+.middleRight .smallCap{
+	font-variant: small-caps;
+	font-size: 24px;
+	text-decoration: underline;
+	line-height: 40px;
+	color: #000;
+	text-transform: capitalize;
+}
+
+.middleRight .detail{
+	font-size: 12px;
+	font-family: "楷体";
+	font-style: oblique;
+	line-height: 10px;
+	color: #676767;
+}
+
+.middleRight .seven{
+	font-size: 116px;
+	color: #75b86b;
+	font-style: oblique;
+	font-weight: 600;
+	margin-left: -16px;
+}
+
+.middleRight .number{
+	position: absolute;
+	bottom: -8px;
+	left: 0;
+	font-size: 55px;
+	color: #cc8091;
+}
+
+.middleRight .textOne{
+	font-size: 21px;
+	color: #cc8091;
+	position: absolute;
+	bottom: 15px;
+	left: 80px;
+}
+
+.middleRight .textTwo{
+	font-size: 12px;
+	color: #959192;
+	position: absolute;
+	bottom: 3px;
+	left: 80px;
+}
+
+.middleBottom{
+	position: relative;
+	margin-top: 25px;
+}
+
+.middleBottom::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.what,.when{
+	width: 230px;
+	margin-right: 20px;
+	float: left;
+}
+
+.how{
+	width: 144px;
+	float: left;	
+}
+
+.middleBottom h2{
+	font-weight: bold;
+	font-size: 16px;
+	font-family: "微软雅黑";
+	text-decoration: underline;
+}
+.middleBottom p{
+	line-height: 16px;
+	color: #767777;
+	font-size: 12px;
+	font-family: "simsun";
+	margin-top: 9px;
+}
+
+.what h2{
+	color: #418c59;
+}
+
+.when h2{
+	color: #d2994f;
+}
+
+.how h2{
+	color: #cc7680;
+}
+
+.how .whatFloat{
+	position: absolute;
+	bottom: 0;
+}
+
+.how .whatFloat p{
+	font-family: "微软雅黑";
+	font-size: 12px;
+	line-height: 16px;
+	color: rgba(35,24,21,0.7);
+}
+
+.how .whatFloat p span{
+	color: rgba(205,74,72,0.7);
+	font-style: oblique;
+}
+
+.bottom{
+	margin-top: 45px;
+	padding-bottom: 30px;
+	border-bottom: 1px solid #938e8c;
+}
+
+.bottom::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.bottomLeft{
+	float: left;
+	width: 415px;
+}
+
+.bottomLeft .leftTop{
+	width: 415px;
+	border-bottom: 2px solid #11456B;
+}
+
+.bottomLeft .firstText{
+	font-family: "黑体";
+	font-size: 44px;
+	color: #11456b;
+	font-weight: bold;
+	line-height: 45px;
+}
+
+.bottomLeft .firstText span{
+	font-size: 72px;
+	color: #f5e321;
+	font-style: oblique;
+}
+
+.bottomLeft .secondText{
+	font-family: "黑体";
+	font-size: 33px;
+	color: #11456b;
+	font-weight: bold;
+	line-height: 50px;
+}
+
+.bottomLeft .leftBottom{
+	margin-top: 20px;
+}
+
+.bottomLeft .leftBottom span{
+	margin: -15px 10px 0 5px;
+	font-family: "微软雅黑";
+	font-size: 70px;
+	color: #F5E321;
+	float: left;
+}
+
+.bottomLeft .leftBottom p{
+	font-family: "simsun";
+	font-size: 12px;
+	color: #767777;
+	line-height: 16px;
+	text-indent: 24px;
+}
+
+.bottomLeft .leftBottom .firstParagraph{
+	text-indent: 0px;
+}
+
+.bottomLeft .leftBottom p img{
+	float: right;
+	display: inline-block;
+	margin: 15px 8px 15px 15px;
+}
+
+.bottomright{
+	float: right;
+}
+
+.bottomright .rightTop{
+	position: relative;
+	width: 458px;
+	height: 275px;
+}
+
+.bottomright .rightTop img{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.bottomright .rightTop div{
+	position: absolute;
+	bottom: 0;
+	z-index: 500;
+	width: 100%;
+	height: 61px;
+	background-color: rgba(0,0,0,0.3);
+}
+
+.bottomright .rightTop div span:first-child{
+	display: inline-block;
+	position: absolute;
+	bottom: 8px;
+	left: 25px;
+	border-left: 3px solid #72b16a;
+	height: 44px;
+	color: #FFFFFF;
+	font-family: "微软雅黑";
+	font-size: 26px;
+	line-height: 44px;
+}
+
+.bottomright .rightTop div span:last-child{
+	font-family: "微软雅黑";
+	font-size: 12px;
+	position: absolute;
+	bottom: 14px;
+	left: 155px;
+	color: #72B16A;
+	word-spacing: 140%;
+	font-style: oblique;
+}
+
+.bottomright .rightBottom{
+	padding-top: 25px;
+	margin-top: 20px;
+	background-color: #edecd6;
+}
+
+.topText p{
+	margin: 0 0 25px 25px;
+	font-family: "微软雅黑";
+	font-size: 16px;
+	line-height: 20px;
+	color: #5a5b5b;
+	word-spacing: 120%;
+}
+
+.topText p span{
+	font-size: 12px;
+	font-style: oblique;
+}
+
+.redLeft{
+	display: inline-block;
+	font-family: "微软雅黑";
+	background-color: #d45c5c;
+	width: 260px;
+	height: 160px;
+	color: #fff;
+}
+
+.zero{
+	float: left;
+	font-size: 110px;
+	height: 86px;
+	margin: 37px 8px;
+	line-height: 86px;
+	border-right: 2px solid #fff;
+}
+
+.nums{
+	font-family: "黑体";
+	margin-top: 37px;
+	font-size: 21px;
+	font-style: oblique;
+	line-height: 24px;
+}
+
+.hello{
+	margin-top: 12px;
+	line-height: 12px;
+	font-size: 12px;
+	font-family: "黑体";
+}
+
+.redRight{
+	position: relative;
+	float: right;
+	width: 178px;
+	height: 160px;
+}
+
+.redRight p{
+	font-family: "黑体";
+	font-size: 14px;
+	color: #5A5B5B;
+	line-height: 16px;
+	font-style: oblique;
+}
+
+.redRight span{
+	font-size: 72px;
+	color: #D45D5C;
+}
+
+.redRight span:first-child{
+	right: 150px;
+	bottom: 120px;
+	position: absolute;
+}
+.redRight span:last-child{
+	right: 0;
+	bottom: 45px;
+	position: absolute;
+}
+
+.redRight p{
+	margin-top: 10px;
+	text-indent: 42px;
+}
+
+footer span{
+	float: right;
+	color: #D45C5C;
+	font-family: "黑体";
+	font-size: 12px;
+}
