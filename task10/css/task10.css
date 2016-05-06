@@ -1,0 +1,42 @@
+html,body{
+	margin: 0;
+	padding: 0;
+}
+
+.container{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.container div{
+	margin: 20px;
+	width: 150px;
+	border: 1px solid #f00;
+}
+
+.first{
+	height: 120px;
+}
+
+.second{
+	height: 100px;
+}
+
+.third{
+	height: 40px;
+}
+
+.forth{
+	height: 200px;
+}
+
+@media only screen and (max-width: 640px) {
+	.forth{
+		order: -1;
+	}
+	.container{
+		flex-wrap: wrap;
+		align-items: flex-start;
+	}
+}
