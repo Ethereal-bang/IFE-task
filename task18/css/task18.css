@@ -1,0 +1,20 @@
+#view div{
+	text-align: center;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	padding: 5px;
+	margin: 15px 15px 0 0;
+	float: left;
+	color: #fff;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+#view div:nth-child(3n+1){
+	background-color: red;
+}
+#view div:nth-child(3n+2){
+	background-color: green;
+}
+#view div:nth-child(3n+3){
+	background-color: blue;
+}
