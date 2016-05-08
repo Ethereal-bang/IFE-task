@@ -1,0 +1,25 @@
+table{
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	margin-top: 20px;
+	border-collapse:collapse;
+}
+
+tr td{
+	padding: 5px;
+	text-align: center;
+	border: 1px solid #98bf21;
+	width: 200px;
+}
+
+tr td:last-child{
+	width: 50px;
+}
+
+tr:first-child{
+	color: white;
+	background-color: #a7c942;
+}
+
+tr:nth-child(2n+3){
+	background-color: #eaf2d3;
+}
