@@ -1,0 +1,19 @@
+#view div{
+	text-align: center;
+	height: 30px;
+	line-height: 30px;
+	padding: 5px;
+	margin: 15px 15px 0 0;
+	float: left;
+	color: #fff;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	background-color: red;
+}
+
+#aqi-input{
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	width: 250px;
+	height: 150px;
+	padding: 10px;
+	font-size: 18px;
+}

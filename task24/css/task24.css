@@ -1,0 +1,36 @@
+.container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-flow: row;
+	width: 1200px;
+	margin: 15px auto;
+}
+
+input{
+	margin: 15px;
+}
+
+input[id = "search"],input[id = "addbtn"]{
+	margin-left: 0;
+}
+
+input[id = "aqi-input"],input[id = "add"]{
+	margin-right: 0;
+}
+
+.container>div{
+	height: 380px;
+}
+.box{
+	background-color: #fff;
+	width: 100%;
+	height: 90%;
+	padding: 6px;
+	margin: 6px;
+	border: 1px solid #676767;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
