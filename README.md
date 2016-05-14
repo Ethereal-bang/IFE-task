@@ -76,4 +76,4 @@
 - 周：每周的数据是一个矩形
 - 月：每周的数据是一个很粗的矩形
 - 鼠标移动到柱状图的某个柱子时，用title属性提示这个柱子的具体日期和数据
--[demo](http://mrkylinzhou.github.io/IFETask/task17/index.html "demo") 
+- [demo](http://mrkylinzhou.github.io/IFETask/task17/index.html "demo") 
