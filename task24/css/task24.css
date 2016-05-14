@@ -15,7 +15,7 @@ input[id = "search"],input[id = "addbtn"]{
 	margin-left: 0;
 }
 
-input[id = "aqi-input"],input[id = "add"]{
+input[id = "data-input"],input[id = "add"]{
 	margin-right: 0;
 }
 
