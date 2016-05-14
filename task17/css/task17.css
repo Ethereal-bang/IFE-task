@@ -1,0 +1,30 @@
+fieldset{
+	width: 800px;
+	margin: 15px auto 0;
+}
+
+.aqi-chart-wrap{
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-end;
+	width: 80%;
+	height: 500px;
+	margin: 15px auto 0;
+}
+
+
+.aqi-chart-wrap div:nth-child(5n+1){
+	background-color: red;
+}
+.aqi-chart-wrap div:nth-child(5n+2){
+	background-color: green;
+}
+.aqi-chart-wrap div:nth-child(5n+3){
+	background-color: blue;
+}
+.aqi-chart-wrap div:nth-child(5n+4){
+	background-color: brown;
+}
+.aqi-chart-wrap div:nth-child(5n+5){
+	background-color: darkcyan;
+}

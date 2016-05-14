@@ -1,0 +1,43 @@
+*{
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+input[type = "text"]{
+	width: 200px;
+	display: block;
+	margin: 35px auto 0;
+}
+
+#hobbyText{
+	width: 200px;
+	margin: 30px auto 0;
+}
+
+textarea{
+	max-width: 195px;
+	max-height: 150px;
+	width: 195px;
+	height: 150px;ss
+}
+
+.view{
+	margin: 0 auto;
+	width: 550px;
+	display: flex;
+	margin-top: 35px;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.view span{
+	padding: 5px;
+	display: block;
+	margin: 10px;
+}
+
+.view span:hover{
+	background-color: green;
+	padding: 5px;
+	color: white;
+	border-radius: 15px;
+}

@@ -1,0 +1,17 @@
+#view{
+	margin-top: 20px;
+}
+
+#view div{
+	width: 10px;
+	display: inline-block;
+}
+#view div:nth-child(3n+1){
+	background-color: red;
+}
+#view div:nth-child(3n+2){
+	background-color: green;
+}
+#view div:nth-child(3n+3){
+	background-color: blue;
+}

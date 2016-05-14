@@ -1,0 +1,53 @@
+fieldset{
+	position: relative;
+	padding-top: 25px;
+	font-family: "微软雅黑";
+	margin: 0 auto;
+	width: 800px;
+	height: 520px;
+}
+
+fieldset div{
+	margin: 0 40px;
+	width: calc(100% - 80px);
+	height: 17%;
+}
+
+span{
+	color: gray;
+	display: block;
+	position: absolute;
+	left: 140px;
+	margin-top: 6px;
+	visibility: hidden;
+}
+
+input{
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	position: absolute;
+	left: 140px;
+	width: 70%;
+	height: 35px;
+	border-radius: 6px;
+	border: 2px solid #BBBBBB;
+}
+
+button{
+	font-size: 18px;
+	font-family: "微软雅黑";
+	font-weight: bold;
+	position: absolute;
+	right: 103px;
+	height: 40px;
+	width: 69px;
+	margin-top: 7px;
+}
+
+label{
+	font-weight: bold;
+	display: inline-block;
+	line-height: 45px;
+	height: 45px;
+	font-size: 18px;
+}

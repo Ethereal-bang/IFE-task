@@ -1,0 +1,184 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	margin: 0px;
+	padding: 0px;
+	font-family: "微软雅黑";
+	background-color: #dedede;
+	min-width: 750px;
+}
+
+header{
+	width: 100%;
+	background-color: #333333;
+	height: 60px;
+	margin-bottom: 20px;
+}
+
+header ul{
+	float: right;
+	list-style: none;
+}
+
+header ul li{
+	float: left;
+	text-align: center;
+	display: block;
+	width: 80px;
+	margin-right: 20px;
+	line-height: 60px;
+}
+
+header ul li a{
+	color: white;
+	text-decoration: none;
+}
+
+article{
+	margin: 0px 20px 20px 20px;
+	padding: 35px 20px;
+	background-color: white;
+	line-height: 28px;
+}
+
+article h3,article div{
+	margin-top: 20px;
+	color: #959192;
+}
+
+article p{
+	margin-top: 20px;
+	text-indent: 32px;
+}
+
+article img{
+	display: block;
+	margin-top: 20px;
+}
+
+article ul{
+	list-style: none;
+	position: relative;
+	left: 20px;
+	margin-top: 20px;
+}
+
+article ol{
+	position: relative;	
+	left: 40px;
+	margin-top: 20px;
+}
+
+article table{
+	width: 100%;
+	border-collapse: collapse;
+}
+
+article table td{
+	border: 1px solid #959192;
+}
+
+article thead{
+	background-color: black;
+	color: white;
+}
+
+article tfoot{
+	background-color: #333333;
+	color: red;
+}
+
+#media{
+	margin: 0px 20px 20px 20px;
+	padding: 35px 20px;
+	background-color: white;
+}
+
+#media figure{
+	width: 180px;
+	height: 220px;
+	padding: 15px;
+	margin-top: 20px;
+	border: 1px solid #959192;
+	text-align: center;
+	position: relative;
+	left: 50px;
+}
+
+#media figure figcaption{
+	margin-bottom: 15px;
+}
+
+#media figure img{
+	width: 180px;
+	height: 180px;
+}
+
+#side{
+	padding:20px;
+	margin: 40px 20px 0px 20px;
+	background-color: white;
+}
+
+#side h2{
+	padding: 15px;
+	border-left: 3px solid #959192;
+	margin-bottom: 20px;
+}
+
+#side form div{
+	margin: 20px 0;
+}
+
+.top label{
+	width: 35%;
+	float: left;
+	text-align: right;
+	padding-right: 15px;
+}
+
+#side div p{
+	margin-left: 35%;
+	padding-left: 15px;
+}
+
+.tips span{
+	float: left;
+	text-align: right;
+	width: 35%;
+	padding-right: 15px;
+}
+
+#side div button{
+	width: 100%;
+	background-color: blue;
+	color: white;
+	height: 40px;
+	font-size: 20px;
+	border-radius: 15px;
+}
+
+footer{
+	text-align: center;
+	background-color: black;
+	color: white;
+	height: 50px;
+	line-height: 50px;
+}
+
+@media only screen and (min-width: 750px){
+	#side{
+		float: right;
+		width: 450px;
+		margin: 80px 20px 0 0;
+		position: fixed;
+		right: 0;
+		top: 0;
+	}
+	#media,article{
+		margin: 0px 530px 20px 20px;
+	}
+}
