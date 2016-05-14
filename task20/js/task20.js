@@ -41,7 +41,7 @@ function init() {
 		var test = false;
 		var dataList = view.getElementsByTagName("div");
 		for(var i = 0; i < dataList.length; ++i){
-			if(data === dataList[i].innerText){
+			if(dataList[i].innerText.indexOf(data) > -1){
 				dataList[i].style.color = "black";
 				dataList[i].style.backgroundColor = "#008000";
 				test = true;
