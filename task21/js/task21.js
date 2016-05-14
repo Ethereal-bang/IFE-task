@@ -18,7 +18,7 @@ Tag.prototype = {
 		//捕获this
 		var that = this;
 		that.span.addEventListener("mouseenter",function(){
-			that.span.innerHTML = "Delete";
+			that.span.innerHTML = "Delete " + that.data;
 		})
 	},
 	mouseLeave : function(){
