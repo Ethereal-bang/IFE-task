@@ -2,7 +2,7 @@ var btns = document.querySelectorAll("input");
 
 var depth = btns[0];
 	breadth = btns[1];
-	aqiInput = btns[2];
+	dataInput = btns[2];
 	search = btns[3];
 	add = btns[4];
 	addBtn = btns[5];
@@ -109,7 +109,7 @@ function init(){
 	},false)
 	search.addEventListener("click",function(){
 		reset();
-		var val = aqiInput.value.trim();
+		var val = dataInput.value.trim();
 		if(!val){
 			alert("请输入要查找的元素！");
 			return;

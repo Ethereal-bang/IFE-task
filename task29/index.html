@@ -45,17 +45,17 @@
 	</head>
 	<body>
 		<div class="container">
-			<input type="text" id="aqi-input" placeholder="请输入内容" />
+			<input type="text" id="data-input" placeholder="请输入内容" />
 			<input type="button" id="checking" value="验证" />
 			<label>必填，长度为4-16个中文、数字、以及英文字母</label>
 		</div>
 		<script type="text/javascript">
 			var parent = document.querySelector(".container").children;
-			var	aqiInput = parent[0];
+			var	dataInput = parent[0];
 				checking = parent[1];
 				val = parent[2];
 			function check(){
-				var data = aqiInput.value.trim() || "";
+				var data = dataInput.value.trim() || "";
 				var pattern = /^[0-9a-zA-Z\u4E00-\u9FA5]*$/;
 				if(!data.match(pattern)){
 					alert("您的输入中包含不被允许的特殊字符！");
@@ -64,20 +64,19 @@
 				if(!data){
 					val.innerHTML = "姓名不能为空！";
 					val.style.color = "red";
-					aqiInput.style.borderColor = "red";
+					dataInput.style.borderColor = "red";
 					return;
 				}
 				var length = count(data);
-				console.log(length);
 				if(length < 4 || length > 16){
 					val.innerHTML = "长度为4-16个字符！";
 					val.style.color = "red";
-					aqiInput.style.borderColor = "red";
+					dataInput.style.borderColor = "red";
 					return;
 				}
 				val.innerHTML = "验证成功！";
 				val.style.color = "limegreen";
-				aqiInput.style.borderColor = "limegreen";
+				dataInput.style.borderColor = "limegreen";
 			}
 			
 			function count(data){
@@ -99,7 +98,7 @@
 					checking.style.border = "2px solid #2e78b9"
 					check();
 				});
-				aqiInput.addEventListener("keyup",function(){
+				dataInput.addEventListener("keyup",function(){
 					check();
 				})
 			}

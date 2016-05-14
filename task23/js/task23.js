@@ -2,7 +2,7 @@ var btns = document.querySelectorAll("input");
 
 var depth = btns[0];
 	breadth = btns[1];
-	aqiInput = btns[2];
+	dataInput = btns[2];
 	search = btns[3];
 
 var dataList = [];
@@ -71,7 +71,7 @@ function paint(val){
 }
 
 function disable(){
-	aqiInput.disabled = true;
+	dataInput.disabled = true;
 	depth.disabled = true;
 	breadth.disabled = true;
 	search.disabled = true;
@@ -81,7 +81,7 @@ function able(){
 	depth.disabled = false;
 	breadth.disabled = false;
 	search.disabled = false;
-	aqiInput.disabled = false;
+	dataInput.disabled = false;
 }
 
 function reset(){
@@ -107,7 +107,7 @@ function init(){
 	},false)
 	search.addEventListener("click",function(){
 		reset();
-		var val = aqiInput.value.trim();
+		var val = dataInput.value.trim();
 		if(!val){
 			alert("请输入要查找的项目！");
 			return;
