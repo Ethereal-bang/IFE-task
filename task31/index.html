@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>task31--->表单（三）联动</title>
+		<link rel="shortcut icon" type="image/x-icon" href="imgs/favicon.png" media="screen" />
+		<link rel="stylesheet" type="text/css" href="css/task31.css"/>
+	</head>
+	<body>
+		<fieldset>
+			<legend>表单联动</legend>
+			<div>
+				<div>
+					<input type="radio" name="student" id="student" value="school" checked="checked" />
+					<label>在校生</label>
+				</div>
+				<div>
+					<input type="radio" name="student" id="society" value="society" />
+					<label>非在校生</label>
+				</div>
+			</div>
+			<div class="inschool">
+				<label>学校</label>
+				<select name="place">
+					<option value="beijing">北京</option>
+					<option value="shanghai">上海</option>
+					<option value="zhejiang">浙江</option>
+				</select>
+				<select name="school">
+					<option>北京大学</option>
+					<option>清华大学</option>
+				</select>
+			</div>
+			<div class="outschool" style="display: none;">
+				<label>就业单位</label>
+				<input type="text" />
+			</div>
+		</fieldset>
+		<script src="js/task31.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

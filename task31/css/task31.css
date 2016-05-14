@@ -1,0 +1,47 @@
+fieldset{
+	font-family: "微软雅黑";
+	padding: 35px;
+	width: 800px;
+	height: 200px;
+	position: absolute;
+	left: calc(50% - 400px);
+	top: calc(50% - 200px);
+}
+
+div div{
+	font-size: 25px;
+	line-height: 25px;
+	display: inline-block;
+	width: calc(50% - 4px);
+}
+
+.inschool,.outschool{
+	margin-top: 60px;
+	font-size: 25px;
+	line-height: 25px;
+}
+
+.inschool select{
+	font-family: "微软雅黑";
+	height: 30px;
+	font-size: 20px;
+}
+
+select[name = "place"]{
+	margin-left: 111px;
+}
+
+select[name = "school"]{
+	width: 200px;
+	margin-left: 160px;
+}
+
+.inschool label,.outschool label{
+	display: inline-block;
+	margin-left: 28px;
+}
+
+.outschool input{
+	height: 25px;
+	margin-left: 100px;
+}

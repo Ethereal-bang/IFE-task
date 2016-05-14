@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>task30--->表单（二）多个表单项的动态校验</title>
+		<link rel="shortcut icon" type="image/x-icon" href="imgs/favicon.png" media="screen" />
+		<link rel="stylesheet" type="text/css" href="css/task30.css"/>
+	</head>
+	<body>
+		<fieldset>
+			<legend>多个表单项的动态校验</legend>
+			<div>
+				<label for="name">名称</label>
+				<input type="text" id="nameid" placeholder="请输入姓名" />
+				<span>必填，长度为4-16个字符</span>
+			</div>
+			<div>
+				<label for="passwd">密码</label>
+				<input type="password" id="passwd" placeholder="请输入密码" />
+				<span>必填，长度为6-16个字符</span>
+			</div>
+			<div>
+				<label for="rePasswd">密码确认</label>
+				<input type="password" id="rePasswd" placeholder="请重复输入密码" />
+				<span>必填，必须和密码一致</span>
+			</div>
+			<div>
+				<label for="email">邮箱</label>
+				<input type="text" id="email" placeholder="请输入邮箱" />
+				<span>请填写正确的邮箱格式</span>
+			</div>
+			<div>
+				<label for="phone">手机</label>
+				<input type="text" id="phone" placeholder="请输入手机" />
+				<span>请填写正确的手机号</span>
+			</div>
+			<button>提交</button>
+		</fieldset>
+		<script src="js/task30.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>
