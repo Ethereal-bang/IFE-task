@@ -3,7 +3,7 @@ var leftIn = document.getElementById("left-in"),
 	rightIn = document.getElementById("right-in"),
 	rightOut = document.getElementById("right-out"),
 	view = document.getElementById("view"),
-	aqiInput = document.getElementById("aqi-input"),
+	dataInput = document.getElementById("data-input"),
 	bubbleSort = document.getElementById("bubbleSort"),
 	inSort = document.getElementById("inSort"),
 	qSort = document.getElementById("qSort"),
@@ -11,8 +11,8 @@ var leftIn = document.getElementById("left-in"),
 //快照
 var	snapshots = [];
 //处理输入数据
-function addAqiData() {
-	var num = aqiInput.value.trim();
+function addData() {
+	var num = dataInput.value.trim();
     if(!num.match(/^\d+$/)) {
         alert("请输入一个数字！")
         return;
@@ -28,7 +28,7 @@ function addAqiData() {
 	return num;
 }
 //渲染页面
-function renderAqiList(arr) {
+function renderList(arr) {
 	var textvalue = "";
 	for(var i = 0; i < arr.length; ++i){
 		textvalue += "<div style = 'height : " + arr[i]*5 + "px' data-num = '" + arr[i] + "'></div>";
@@ -38,32 +38,32 @@ function renderAqiList(arr) {
 //添加事件
 function init() {
 	leftIn.addEventListener("click",function(){
-		var data = addAqiData();
+		var data = addData();
 		if(!data){
 			return;
 		}
 		dataStore.unshift(data);
-		renderAqiList(dataStore);
+		renderList(dataStore);
 	},false);
 	
 	leftOut.addEventListener("click",function(){
-		var data = dataStore.shift();
-		renderAqiList(dataStore);
+		var data = dataStore.shift() || "没有数据";
+		renderList(dataStore);
 		alert(data);
 	},false);
 	
 	rightIn.addEventListener("click",function(){
-		var data = addAqiData();
+		var data = addData();
 		if(!data){
 			return;
 		}
 		dataStore.push(data);
-		renderAqiList(dataStore);
+		renderList(dataStore);
 	},false);
 	
 	rightOut.addEventListener("click",function(){
-		var data = dataStore.pop();
-		renderAqiList(dataStore);
+		var data = dataStore.pop() || "没有数据";
+		renderList(dataStore);
 		alert(data);
 	},false);
 	
@@ -86,7 +86,7 @@ function init() {
 	    function paint(){
 	        var snapshot = snapshots.shift() || [];
 	        if(snapshot.length !== 0) {
-	            renderAqiList(snapshot);
+	            renderList(snapshot);
 	        }
 	        else{
 	            clearInterval(timer); //绘制结束
@@ -105,7 +105,7 @@ function init() {
 	    function paint(){
 	        var snapshot = snapshots.shift() || [];
 	        if(snapshot.length !== 0) {
-	            renderAqiList(snapshot);
+	            renderList(snapshot);
 	        }
 	        else{
 	            clearInterval(timer); //绘制结束
@@ -122,10 +122,10 @@ function init() {
 	
 	rand.addEventListener("click",function(){
 		dataStore = random();
-		renderAqiList(dataStore);
+		renderList(dataStore);
 	},false);
 	
-	renderAqiList(dataStore);
+	renderList(dataStore);
 }
 
 function bubble(arr){
