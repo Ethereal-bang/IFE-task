@@ -161,7 +161,6 @@ function init(){
 			event.target.nextElementSibling.style.visibility = "visible";
 			event.target.nextElementSibling.style.color = "gray";
 			event.target.style.borderColor = "#BBBBBB";
-			reset(event.target,event.target.nextElementSibling);
 		}
 	},true);
 	document.querySelector("fieldset").addEventListener("blur",function(event){
